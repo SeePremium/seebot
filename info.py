@@ -38,7 +38,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Seemovies_support')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/See_update')
-
+USERNAME = environ.get('USERNAME', 'https://t.me/JNGohell')
 # Bot settings
 AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
