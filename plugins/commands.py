@@ -115,15 +115,11 @@ async def start(client, message):
                 file_size = get_size(file.file_size),
                 file_caption=file.caption
             )   
-            btn = [[
-                InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file.file_id}")
-            ]]
             await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file.file_id,
                 caption=f_caption,
-                protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(btn)
+                protect_content=True if pre == 'filep' else False
             )
         return
         
@@ -139,15 +135,11 @@ async def start(client, message):
         file_size = get_size(files.file_size),
         file_caption=files.caption
     )
-    btn = [[
-        InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f"stream#{file_id}")
-    ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup(btn)
+        protect_content=True if pre == 'filep' else False
     )
 
 @Client.on_message(filters.command('index_channels') & filters.user(ADMINS))
