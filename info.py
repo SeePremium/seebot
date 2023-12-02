@@ -63,5 +63,5 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/Filmy_funs")
 # stream features vars
 """Deploy this repo: https://github.com/adarsh-goel/filestreambot"""
 BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "0"))
-URL = environ.get("URL", "https://sl-bots-0db4fd13c9ad.herokuapp.com/")
+URL = environ.get("URL", "https://seeebot.onrender.com/")
                            
