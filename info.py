@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Auto_Filters_Bot')
 API_ID = int(environ.get('API_ID', '29264299'))
 API_HASH = environ.get('API_HASH', '01715c2876c152106ceab149e4764ec5')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6692502830:AAGMXdRW0hh8OUhoOoqn5oU2QrYfM6RCacY')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6686129524:AAH4UfXV5Jme04cJ5cRnhPZ1DuqkIkpPsAo')
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics and stickers
@@ -25,27 +25,27 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg h
 ADMINS = [int(admins) if id_pattern.search(admins) else admins for admins in environ.get('ADMINS', '5505094097').split()]
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001953273598').split()]
-auth_channel = environ.get('AUTH_CHANNEL', '-1001913523864')
+INDEX_CHANNELS = [int(index_channels) if id_pattern.search(index_channels) else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1001532575427').split()]
+auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001825334662'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001829666061'))
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://sunny:sunny@cluster0.hz3pi7t.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://tiniqequde:Sunny12@cluster0.vuzu197.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Seemovies_support')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/See_update')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Filmy_funs')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/filmy_funs_update')
 USERNAME = environ.get('USERNAME', 'https://t.me/Sunnyseee')
 # Bot settings
 AUTO_FILTER = is_enabled((environ.get('AUTO_FILTER', "True")), True)
-IMDB = is_enabled((environ.get('IMDB', "False")), False)
+IMDB = is_enabled((environ.get('IMDB', "False")), True)
 SPELL_CHECK = is_enabled(environ.get("SPELL_CHECK", "True"), True)
 SHORTLINK = is_enabled((environ.get('SHORTLINK', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
-WELCOME = is_enabled((environ.get('WELCOME', "False")), False)
+WELCOME = is_enabled((environ.get('WELCOME', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 LINK_MODE = is_enabled(environ.get("LINK_MODE", "True"), True)
@@ -58,7 +58,7 @@ FILE_CAPTION = environ.get("FILE_CAPTION", "<i>{file_name}</i>\n\nᴘʟᴇᴀs�
 SHORTLINK_URL = environ.get("SHORTLINK_URL", "jnglink.in")
 SHORTLINK_API = environ.get("SHORTLINK_API", "93afdd16e98ac2ba9461051503e759f4da683333")
 WELCOME_TEXT = environ.get("WELCOME_TEXT", "Hello {mention}, Welcome to {title} group!")
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/seesmovies")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/Filmy_funs")
 
 # stream features vars
 """Deploy this repo: https://github.com/adarsh-goel/filestreambot"""
